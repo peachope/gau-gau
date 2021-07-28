@@ -1,112 +1,116 @@
- body {
-     background: #131617;
-     display: flex;
-     justify-content: center;
-     align-items: center;
- }
+.wrapper {
+    background: #131617;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: auto;
 
- .container {
-     max-width: 1100px;
-     margin: 0 auto;
+    .container {
+        
+        .member {
 
-     .member {
-         margin: 50px 0;
-         color: white;
-         font-family: 'Work Sans', sans-serif;
-         display: flex;
-         justify-content: space-between;
-         border-radius: 14px;
-         padding: 30px 0;
-         align-items: center;
+            color: white;
+            font-family: 'Work Sans', sans-serif;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 14px;
+            margin-top: 20px;
+            align-items: center;
 
-         .infor-member-team {
-             margin-right: 20px;
-             font-family: 'Work Sans', sans-serif;
+            .infor-member-team {
+                margin-right: 20px;
+                font-family: 'Work Sans', sans-serif;
 
-             .name-member {
-                 h4 {
-                     font-size: 48px;
-                     line-height: 1.2;
-                     font-weight: 600;
-                     margin-bottom: 20px;
-                 }
+                .name-member {
+                    h4 {
+                        font-size: 48px;
+                        line-height: 1.2;
+                        font-weight: 600;
+                        margin-bottom: 20px;
+                    }
 
-                 span {
-                     margin-bottom: 20px;
-                     color: #B7B7B7;
-                 }
+                    span {
+                        margin-bottom: 20px;
+                        color: #B7B7B7;
+                    }
 
-                 .major-member {
-                     margin-top: 20px;
-                     font-size: 19px;
-                 }
-             }
+                    .major-member {
+                        margin-top: 20px;
+                        font-size: 19px;
+                    }
+                }
 
-             .hobbies {
-                 display: flex;
-                 margin-top: 40px;
+                .hobbies {
+                    display: flex;
+                    margin-top: 40px;
 
-                 li {
-                     width: 150px;
-                     height: 50px;
-                     display: flex;
-                     justify-content: center;
-                     align-items: center;
-                     border: 1px solid #8f44fd;
-                     border-radius: 14px;
-                     padding: 0 5px;
-                     transition: all 0.35s ease-in;
+                    li {
+                        min-width: 150px;
+                        height: 50px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border: 1px solid #8f44fd;
+                        border-radius: 14px;
+                        
+                        transition: all 0.35s ease-in;
+                        margin-bottom: 10px;
 
-                     &:hover {
-                         background: #8f44fd;
-                         color: white;
-                     }
+                        &:hover {
+                            background: #8f44fd;
+                            color: white;
+                        }
 
-                     span {
-                         color: white;
-                     }
+                        span {
 
-                     margin-right: 20px;
+                            color: white;
+                        }
 
-                     &:first-child {
-                         background: #8f44fd;
-                         color: white;
-                         border: 1px solid white;
+                        margin-right: 20px;
 
-                         &:hover {
-                             background: #131617;
-                             color: #8f44fd;
-                         }
-                     }
-                 }
-             }
-         }
+                        &:first-child {
+                            background: #8f44fd;
+                            color: white;
+                            border: 1px solid white;
 
-         .image-member {
-             width: 350px;
-             position: relative;
-             background-color: #D1AAFF;
-             ;
-             border-radius: 65% 35% 29% 71% / 55% 30% 70% 45%;
-             z-index: 0;
+                            &:hover {
+                                background: #131617;
+                                color: #8f44fd;
+                            }
+                        }
+                    }
+                }
+            }
 
-             img {
-                 display: block;
-                 border-radius: 21% 79% 50% 50% / 21% 50% 50% 79%;
-                 width: 100%
-             }
+            .image-member {
+                width: 350px;
+                position: relative;
+                background-color: #D1AAFF;
 
-             &::after {
-                 position: absolute;
-                 content: "";
-                 background-color: #8f44fd;
-                 left: 0;
-                 right: 0;
-                 bottom: 0;
-                 top: 0;
-                 border-radius: 21% 79% 50% 50% / 21% 50% 50% 79%;
-                 z-index: -1;
-             }
-         }
-     }
- }
+                border-radius: 65% 35% 29% 71% / 55% 30% 70% 45%;
+                z-index: 0;
+
+                img {
+                    display: block;
+                    border-radius: 21% 79% 50% 50% / 21% 50% 50% 79%;
+                    width: 100%;
+                    padding-left: 10px;
+
+                }
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    background-color: #8f44fd;
+                    left: 10px;
+                    right: 0;
+                    bottom: 0;
+                    top: 0;
+                    border-radius: 21% 79% 50% 50% / 21% 50% 50% 79%;
+                    z-index: -1;
+                }
+            }
+        }
+    }
+}
