@@ -1,0 +1,130 @@
+body {
+  background: #131617;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.container .member {
+  margin: 50px 0;
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 14px;
+  padding: 30px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .member .infor-member-team {
+  margin-right: 20px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.container .member .infor-member-team .name-member h4 {
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.container .member .infor-member-team .name-member span {
+  margin-bottom: 20px;
+  color: #B7B7B7;
+}
+
+.container .member .infor-member-team .name-member .major-member {
+  margin-top: 20px;
+  font-size: 19px;
+}
+
+.container .member .infor-member-team .hobbies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+}
+
+.container .member .infor-member-team .hobbies li {
+  width: 150px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #8f44fd;
+  border-radius: 14px;
+  padding: 0 5px;
+  -webkit-transition: all 0.35s ease-in;
+  transition: all 0.35s ease-in;
+  margin-right: 20px;
+}
+
+.container .member .infor-member-team .hobbies li:hover {
+  background: #8f44fd;
+  color: white;
+}
+
+.container .member .infor-member-team .hobbies li span {
+  color: white;
+}
+
+.container .member .infor-member-team .hobbies li:first-child {
+  background: #8f44fd;
+  color: white;
+  border: 1px solid white;
+}
+
+.container .member .infor-member-team .hobbies li:first-child:hover {
+  background: #131617;
+  color: #8f44fd;
+}
+
+.container .member .image-member {
+  width: 350px;
+  position: relative;
+  background-color: #D1AAFF;
+  border-radius: 65% 35% 29% 71% / 55% 30% 70% 45%;
+  z-index: 0;
+}
+
+.container .member .image-member img {
+  display: block;
+  border-radius: 21% 79% 50% 50% / 21% 50% 50% 79%;
+  width: 100%;
+}
+
+.container .member .image-member::after {
+  position: absolute;
+  content: "";
+  background-color: #8f44fd;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  border-radius: 21% 79% 50% 50% / 21% 50% 50% 79%;
+  z-index: -1;
+}
+/*# sourceMappingURL=style1.css.map */
