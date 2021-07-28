@@ -4,8 +4,8 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    height: auto;
-
+    min-height: 100vh;
+    justify-content: center;
     .container {
         
         .member {

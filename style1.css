@@ -11,7 +11,10 @@
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  height: auto;
+  min-height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .wrapper .container .member {
